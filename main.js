@@ -1,17 +1,10 @@
 import { areaSobrevolar, posicionDron, accionDron } from './controlForestal.js';
 import readline from 'readline';
 
-//const readline = require("readline");
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-/* rl.question("what: ", (userInput) => {
-    console.log(userInput);
-    rl.question(" math: ", (userInput) => {
-        console.log(userInput);
-    })
-})*/
 rl.question("Introduce area a sobrevolar: ", function(area){
     areaSobrevolar(area[0], area[2]);
     var main = function () {
